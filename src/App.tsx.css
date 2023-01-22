@@ -1,0 +1,39 @@
+:root {
+    --page-bg-color: #121212;
+    --page-fg-color: #f8f8f8;
+    --panel-bg-color: #262626;
+}
+
+body {
+    align-items: center;
+    background-color: var(--page-bg-color);
+    color: var(--page-fg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.app {
+    min-width: 45.0rem;
+}
+
+button {
+    background-color: var(--panel-bg-color);
+    border: 0.125rem solid var(--panel-bg-color);
+    border-radius: 0.25rem;
+    color: var(--page-fg-color);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+button:hover {
+    animation: breath-fade 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes breath-fade {
+    0%, 100% { filter: brightness(100%); }
+    50% { filter: brightness(113%); }
+}

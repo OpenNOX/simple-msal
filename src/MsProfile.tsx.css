@@ -1,0 +1,29 @@
+.ms-profile h1 {
+    margin: 0;
+}
+
+.ms-profile table {
+    border: 0.125rem solid var(--panel-bg-color);
+    border-radius: 0.25rem;
+    border-spacing: 0;
+    margin: 1.0rem 0;
+    width: 100%;
+}
+
+.ms-profile th {
+    background-color: var(--panel-bg-color);
+    padding: 0.5rem 1.0rem;
+    text-align: right;
+    white-space: nowrap;
+    width: 0.01%;
+}
+
+.ms-profile td {
+    border-bottom: 0.125rem solid var(--panel-bg-color);
+    padding: 0.5rem;
+    padding-left: 1.0rem;
+}
+
+.ms-profile tr:last-child td {
+    border: 0;
+}
